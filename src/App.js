@@ -1,23 +1,66 @@
-import logo from './logo.svg';
+
 import './App.css';
+import SimplePieChart from './SimplePieChart'
+
 
 function App() {
+
+
+
+  const MyStyle = {
+
+    center: { "text-align": "center" },
+    table: {
+      "width": "100%"
+    }
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <br />
+
+
+      <table style={MyStyle.table}>
+        <tr >
+
+          <td colSpan={2}> <b style={MyStyle.center}>Chars for react   </b></td>
+
+        </tr>
+        <tr >
+
+          <td colSpan={2}><hr /></td>
+
+        </tr>
+        <tr >
+
+          <td colSpan={2}> Using: recharts.org </td>
+
+        </tr>
+        <tr >
+
+          <td colSpan={2}>John</td>
+
+        </tr>
+
+        <tr >
+
+          <td colSpan={2}><hr /></td>
+
+        </tr>
+        <tr >
+
+          <td colSpan={2}>
+            <SimplePieChart />
+          </td>
+
+        </tr>
+      </table>
+
+
+
+
     </div>
   );
 }
